@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Real-Time Emergency Task Scheduler
 
 A dual-tier discrete-time task scheduling platform featuring a hand-built **Indexed Binary Min-Heap in C++17** and an interactive **Streamlit & Plotly Control Room Dashboard**.
@@ -136,3 +137,6 @@ Open `http://localhost:8501` in your browser.
    - Navigate to **Tab 4 · Policy Comparison**.
    - Click **Benchmark All Policies**.
    - Compare miss rates and average wait times between `PRIORITY`, `EDF`, `HYBRID`, and `LST` on the same workload.
+=======
+# ds_repo
+>>>>>>> 6b842671d07f7e6b9dc0b813b1b2cd59731cc495
