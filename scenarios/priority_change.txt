@@ -1,0 +1,6 @@
+# Priority change scenario: Task 3 starts with low priority (5), then gets upgraded to P1 mid-run
+CONFIG workers=1 policy=PRIORITY preemptive=1 aging=0 miss_action=DROP max_time=40
+TASK id=1 arrive=0 burst=6 deadline=20 priority=3
+TASK id=2 arrive=1 burst=5 deadline=25 priority=2
+TASK id=3 arrive=2 burst=4 deadline=16 priority=5
+PRIORITY_CHANGE time=4 id=3 new_priority=1

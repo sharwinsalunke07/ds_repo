@@ -1,0 +1,29 @@
+# C++ build artifacts
+*.exe
+*.o
+*.obj
+*.pdb
+*.ilk
+engine/bin/
+engine/build/
+engine/scheduler
+engine/test_heap
+engine/test_scheduler
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.pytest_cache/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,109 @@
+/* Humanized Modern Craft Design System */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+html, body, [class*="css"] {
+    font-family: 'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    letter-spacing: -0.015em;
+}
+
+code, pre {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+/* ELIMINATE ALL BLACK STRIPS (Top header & decoration lines) */
+header[data-testid="stHeader"],
+.stAppHeader,
+header {
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+div[data-testid="stDecoration"] {
+    display: none !important;
+    background: transparent !important;
+    height: 0 !important;
+}
+
+div[data-testid="stToolbar"] {
+    background: transparent !important;
+}
+
+/* Glassmorphic Warm Cards & Elevate */
+div[data-testid="stMetric"] {
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-radius: 14px !important;
+    padding: 16px 20px !important;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+div[data-testid="stMetric"]:hover {
+    transform: translateY(-2px);
+}
+
+div[data-testid="stMetricLabel"] {
+    font-size: 0.85rem !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.04em !important;
+}
+
+div[data-testid="stMetricValue"] {
+    font-size: 1.85rem !important;
+    font-weight: 800 !important;
+    letter-spacing: -0.025em !important;
+}
+
+/* Humanized Tactile Buttons */
+div.stButton > button:first-child {
+    border-radius: 11px !important;
+    font-weight: 600 !important;
+    font-size: 0.92rem !important;
+    padding: 0.55rem 1.35rem !important;
+    border: none !important;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    letter-spacing: 0.01em !important;
+}
+
+div.stButton > button:first-child:hover {
+    transform: translateY(-1.5px) scale(1.01) !important;
+    filter: brightness(1.06) !important;
+}
+
+div.stButton > button:first-child:active {
+    transform: translateY(0.5px) !important;
+}
+
+/* Rounded Pill Tabs */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 8px;
+    padding: 6px 8px;
+    border-radius: 14px !important;
+    backdrop-filter: blur(12px);
+}
+
+.stTabs [data-baseweb="tab"] {
+    border-radius: 10px !important;
+    font-weight: 600 !important;
+    font-size: 0.9rem !important;
+    padding: 8px 18px !important;
+    transition: all 0.2s ease !important;
+}
+
+/* Warm, Tactile Scrollbars */
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(140, 125, 110, 0.25);
+    border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(140, 125, 110, 0.45);
+}

@@ -1,0 +1,9 @@
+# Overload scenario: Capacity limit forces missed deadlines across multiple workers
+CONFIG workers=2 policy=EDF preemptive=1 aging=0 miss_action=DROP max_time=40
+TASK id=1 arrive=0 burst=8 deadline=10 priority=2
+TASK id=2 arrive=0 burst=8 deadline=9  priority=1
+TASK id=3 arrive=1 burst=7 deadline=11 priority=3
+TASK id=4 arrive=2 burst=6 deadline=8  priority=1
+TASK id=5 arrive=3 burst=7 deadline=10 priority=1
+TASK id=6 arrive=4 burst=9 deadline=14 priority=4
+

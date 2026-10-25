@@ -1,0 +1,6 @@
+# Basic sanity check scenario: All tasks complete on time
+CONFIG workers=2 policy=PRIORITY preemptive=0 aging=0 miss_action=DROP max_time=30
+TASK id=1 arrive=0 burst=4 deadline=10 priority=3
+TASK id=2 arrive=1 burst=3 deadline=8  priority=1
+TASK id=3 arrive=2 burst=5 deadline=15 priority=2
+TASK id=4 arrive=4 burst=2 deadline=12 priority=4

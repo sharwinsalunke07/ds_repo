@@ -1,0 +1,7 @@
+# Starvation scenario: Low-priority task 1 (priority 5) avoids starvation due to aging
+CONFIG workers=1 policy=PRIORITY preemptive=1 aging=1 aging_interval=3 miss_action=DROP max_time=35
+TASK id=1 arrive=0 burst=4 deadline=30 priority=5
+TASK id=2 arrive=1 burst=3 deadline=15 priority=2
+TASK id=3 arrive=3 burst=3 deadline=18 priority=2
+TASK id=4 arrive=5 burst=3 deadline=22 priority=2
+TASK id=5 arrive=7 burst=3 deadline=25 priority=2
